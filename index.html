@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engagement Ring Style Quiz</title>
+    <title>Jewelry Collection Quiz - Dazzling Rock</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Find Your Engagement Ring Style</h1>
-        <div id="quiz"></div>
-        <button id="next-btn">Next</button>
-        <div id="result" class="hidden">
-            <h2>Your Recommended Style:</h2>
-            <p id="style"></p>
-            <p>Explore beautiful engagement rings at <a href="https://www.dazzlingrock.com" target="_blank">Dazzling Rock</a> and find your perfect match!</p>
+    <header>
+        <h1>Find Your Perfect Jewelry Collection</h1>
+        <p>Brought to you by <a href="https://dazzlingrock.com">DazzlingRock.com</a></p>
+    </header>
+
+    <main>
+        <div id="quiz-container">
+            <div id="question"></div>
+            <div id="options"></div>
+            <button id="next-button" onclick="nextQuestion()">Next</button>
         </div>
-    </div>
+        <div id="result-container" style="display:none;">
+            <h2>Your Recommended Collection:</h2>
+            <div id="result"></div>
+            <p>Explore more at <a href="https://dazzlingrock.com">DazzlingRock.com</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dazzling Rock. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
